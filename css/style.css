@@ -1,0 +1,80 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+body {
+  background-color: #3a3a3a;
+  margin: auto;
+  padding: auto;
+}
+.parent {
+  width: 350px;
+  height: 400px;
+  background-color: #4f4d4e;
+  border-radius: 20px;
+  margin: 100px auto;
+}
+.titr {
+  position: relative;
+  display: inline-block;
+  margin: 40px 24px 10px 30px;
+  color: #fffefb;
+  padding-bottom: auto;
+}
+.titr1 {
+  position: relative;
+  display: inline-block;
+  margin: auto 24px 10px 30px;
+  color: #fffefb;
+}
+#Uname {
+  width: 260px;
+  height: 50px;
+  border: none;
+  border-radius: 6px;
+  padding-left: 3px;
+  margin: 25px 24px 10px 30px;
+  outline: 1px solid #64ffa3;
+  background-color: #4f4d4e;
+}
+#Pass {
+  width: 260px;
+  height: 50px;
+  border: none;
+  border-radius: 6px;
+  padding-left: 3px;
+  margin: 8px 24px 8px 30px;
+  outline: 1px solid #64ffa3;
+  background-color: #4f4d4e;
+}
+#Pass:focus {
+  border: 1px solid hsl(330, 2%, 25%);
+  outline: none;
+}
+#Uname:focus {
+  border: 1px solid hsl(330, 2%, 25%);
+  outline: none;
+}
+
+button {
+  margin: 5px 24px 8px 30px;
+  width: 260px;
+  height: 50px;
+  border-radius: 6px;
+  background-color: #64ffa3;
+  border: none;
+  display: inline-block;
+  cursor: pointer;
+}
+.account {
+  margin-top: 30px;
+  margin-left: 30px;
+  padding-bottom: auto;
+  color: white;
+  font-size: 15px;
+}
+.sign_in {
+  color: #64ffa3;
+}
