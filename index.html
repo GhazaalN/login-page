@@ -1,33 +1,74 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
-      rel="stylesheet"
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="A responsive sign-in interface built with HTML and CSS."
     />
+    <title>Sign in — UI Demo</title>
     <link rel="stylesheet" href="css/style.css" />
-    <title>Login Form</title>
   </head>
   <body>
-  <div class="parent">
-    <h4 class="titr">
-      Sign in
-    </h4>
-    <h6 class="titr1">
-      Login to manage your account
-    </h6>
-    <input type="text" name="Uname" id="Uname" placeholder="  ghazalnikseresht@gmail.com">             
-    <input type="Password" name="Pass" id="Pass" placeholder="  ***********">   
-    <p class="account">
-      Don't have an account?
-      <p_2 class="sign_in">
-        Sign in
-      </p_2>
-    </p>         
-    <button type="submit" class="signupbtn">Sign in</button>
-  </div>
+    <main class="page">
+      <section class="login-card" aria-labelledby="page-title">
+        <div class="brand-mark" aria-hidden="true">G</div>
+        <p class="eyebrow">WELCOME BACK</p>
+        <h1 id="page-title">Sign in</h1>
+        <p class="intro">Enter your details to preview the sign-in interface.</p>
+
+        <fieldset class="credentials">
+          <legend class="visually-hidden">Sign-in details</legend>
+
+          <div class="field">
+            <label for="email">Email address</label>
+            <input
+              id="email"
+              name="email"
+              type="email"
+              placeholder="you@example.com"
+              autocomplete="off"
+              required
+            />
+          </div>
+
+          <div class="field">
+            <label for="password">Password</label>
+            <input
+              id="password"
+              name="password"
+              type="password"
+              placeholder="Enter a sample password"
+              autocomplete="off"
+              required
+            />
+          </div>
+
+          <button id="sign-in-button" type="button">Continue</button>
+        </fieldset>
+
+        <p class="demo-note">
+          This is a front-end demo only. It does not authenticate, send, or save
+          your details.
+        </p>
+        <p id="form-status" class="status" role="status" aria-live="polite"></p>
+      </section>
+    </main>
+
+    <script>
+      const email = document.querySelector("#email");
+      const password = document.querySelector("#password");
+      const status = document.querySelector("#form-status");
+
+      document.querySelector("#sign-in-button").addEventListener("click", () => {
+        if (!email.reportValidity() || !password.reportValidity()) {
+          return;
+        }
+
+        status.textContent =
+          "Preview only — no sign-in service is connected.";
+      });
+    </script>
   </body>
 </html>
