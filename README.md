@@ -1,33 +1,35 @@
-# Login Page
+# Login UI Demo
 
-A simple and clean login page built using HTML and CSS.
+A responsive, static sign-in interface built with HTML, CSS, and a small amount of JavaScript.
 
 ## Features
 
-- Responsive login interface
-- Clean and modern UI design
-- Custom CSS styling
-- Simple form layout
+- Semantic form controls with visible labels
+- Browser email validation and required-field checks
+- Responsive layout and keyboard-visible focus states
+- A clear demo message after the fields are completed
 
-## Technologies
+## Important
 
-- HTML5
-- CSS3
+This repository is a front-end practice project. It has no authentication backend and does not send or save form data. Use sample values only; do not enter a real password.
 
-## How to Run
+## Run locally
 
-Open `index.html` in your web browser.
+Open `index.html` in a web browser. No package installation or build step is required.
 
-## Project Structure
+## Project structure
 
 ```text
 login-page/
 ├── index.html
 ├── css/
 │   └── style.css
+├── LICENSE
 └── README.md
 ```
 
-## Purpose
+## Technologies
 
-This project was created to practice frontend fundamentals, page layout, and CSS styling.
+- HTML5
+- CSS3
+- Vanilla JavaScript
